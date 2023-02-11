@@ -1,0 +1,79 @@
+@media (max-width: 7680px){
+    /* html5.php: Begin */ 
+    .menu-main {
+        width: 250px;
+        height: 100%;       
+        font-size: 14px;
+        font-weight: bold;
+        font-family: 'Open Sans', sans-serif;
+        background-color: #DC4A25;
+        border-right: 1px solid #9e2000;  
+    }    
+    .menu-main button {
+        display: flex;
+        width: 100%;
+        padding: 18px 0 18px 10px;
+        gap: 10px;
+        font-size: 16px;
+        align-items: center;
+        border: 0;
+        cursor: pointer;
+        transition: 0.3s ease;
+        color: #F2F2F2;
+        font-family: 'Open Sans', sans-serif;         
+        background-color: #DC4A25;
+            
+    }
+    .menu-main button:hover {        
+        background-color: #bc3c1c;
+    }
+        .rotate {
+            transform: rotate(90deg);
+            transition: transform 0.3s ease;
+        }
+        .fa-caret-down:not(.rotate){
+            transform: rotate(0deg);
+            transition: 0.3s ease;
+            z-index: 0;
+        }
+    .menu-content {       
+        height: 30vh;        
+        max-height: 0;        
+        transition: max-height 0.3s ease;
+        overflow: hidden;        
+        overflow-y: auto;
+        border-top: 1px solid #9e2000;
+        background-color: #E5A990;  
+    }    
+        .show {        
+            max-height: 900px;
+            border-bottom: 1px solid #9e2000;
+        }
+        .menu-content ul li {
+            padding: 10px;
+            border-bottom: 1px dashed #9e2000;            
+        }        
+        .menu-content ul li:last-child {
+            padding: 10px;
+            border-bottom: 0;
+        }        
+            .menu-content ul li a {            
+                text-decoration: none;
+                color: #9e2000;
+            }
+            .menu-content ul li a:hover {
+                text-decoration: underline;
+            }
+        .menu-content::-webkit-scrollbar{
+            width: 15px;
+            
+        }
+        .menu-content::-webkit-scrollbar-track{
+            background-color: #d57f5b;
+            border-left: 1px solid #9e2000;
+        }
+        .menu-content::-webkit-scrollbar-thumb{
+            background-color: #9e2000;            
+        }  
+    /* html5.php: End */
+}
